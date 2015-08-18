@@ -14,7 +14,7 @@
 * [ ] Contact
   * [ ] First Name
   * [ ] Last Name
-  * [ ] Able to show Full Name (as "Last Name, First Name")
   * [ ] Phone Number
   * [ ] Address
   * [ ] ...
+  * [ ] Able to show Full Name (as "Last Name, First Name")

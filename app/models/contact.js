@@ -7,6 +7,8 @@ export default DS.Model.extend({
   phone: DS.attr('string'),
   address: DS.attr('string'),
 
+  pets: DS.hasMany('pet', {async: true}),
+
   fullName: Ember.computed('firstName', 'lastName', function() {
     return `${this.get('firstName')} ${this.get('lastName')}`;
   }),

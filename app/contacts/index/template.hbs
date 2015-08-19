@@ -13,6 +13,7 @@
       <td>{{contact.phone}}</td>
       <td>{{contact.address}}</td>
       <td>
+        {{#link-to 'contacts.show' contact}}Details{{/link-to}}
         {{#link-to 'contacts.edit' contact}}Edit{{/link-to}}
       </td>
     </tr>

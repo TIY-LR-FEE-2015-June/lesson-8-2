@@ -1,1 +1,14 @@
-{{outlet}}
+<h2>{{model.fullName}}</h2>
+
+<p><strong>Address:</strong> {{model.address}}</p>
+<p><strong>Phone:</strong> {{model.phone}}</p>
+
+<h3>Pets</h3>
+
+<p>{{#link-to 'contacts.pets.create' model}}Add New Pet :){{/link-to}}</p>
+
+<ul>
+  {{#each model.pets as |pet|}}
+    <li>{{pet.name}}</li>
+  {{/each}}
+</ul>

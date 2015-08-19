@@ -1,0 +1,15 @@
+<form {{action 'submit' on='submit'}}>
+  <label for="contact-first-name">First Name</label>
+  {{input id="contact-first-name" type="text" value=firstName}}
+
+  <label for="contact-last-name">Last Name</label>
+  {{input id="contact-last-name" type="text" value=lastName}}
+
+  <label for="contact-phone">Phone Number</label>
+  {{input id="contact-phone" type="text" value=phone}}
+
+  <label for="contact-address">Address</label>
+  {{input id="contact-address" type="text" value=address}}
+
+  <button>Save</button>
+</form>

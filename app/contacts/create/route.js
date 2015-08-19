@@ -9,7 +9,9 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    save: function(contact) {
+    save: function(contact, data) {
+      contact.setProperties(data);
+
       contact.save().then(() => {
         this.transitionTo('contacts.index');
       });

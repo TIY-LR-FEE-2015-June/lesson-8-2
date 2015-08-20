@@ -1,0 +1,36 @@
+@import 'materialize';
+@import 'ember-cli-materialize';
+
+$daycare_height: 52px;
+
+body {
+  margin-bottom: $daycare_height * 2;
+}
+
+.daycare-status {
+  @extend .blue;
+  @extend .white-text;
+  height: $daycare_height;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  h4 {
+    margin: 0;
+    line-height: $daycare_height;
+    display: inline-block;
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+    &:not(:last-of-type):after {
+      content: ',';
+    }
+  }
+}

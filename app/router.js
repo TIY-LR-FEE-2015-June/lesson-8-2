@@ -17,6 +17,8 @@ Router.map(function() {
       this.route('edit', {path: '/:pet_id'});
     });
   });
+
+  this.route('breeds');
 });
 
 export default Router;

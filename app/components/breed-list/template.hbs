@@ -1,0 +1,11 @@
+<ul>
+  {{#each breeds as |breed|}}
+    <li>
+      {{breed.name}} -
+
+      {{#each breed.items as |pet|}}
+        {{pet.name}},
+      {{/each}}
+    </li>
+  {{/each}}
+</ul>

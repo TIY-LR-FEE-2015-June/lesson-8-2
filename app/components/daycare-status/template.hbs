@@ -1,0 +1,15 @@
+<h4>Checked In</h4>
+
+<ul>
+  {{#each daycare.checkedInPets as |pet|}}
+    <li>{{pet.name}}</li>
+  {{/each}}
+</ul>
+
+{{#if daycare.checkedInPets.length}}
+  {{#unless loading}}
+    <button {{action 'markVisits'}}>Mark Vist</button>
+  {{else}}
+    <p>loading...</p>
+  {{/unless}}
+{{/if}}

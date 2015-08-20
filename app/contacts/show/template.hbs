@@ -9,6 +9,10 @@
 
 <ul>
   {{#each model.pets as |pet|}}
-    <li>{{pet.name}}</li>
+    <li>
+      {{pet.name}} -
+      <span class="visits">{{pet.visits}}</span>
+      <a href="#" {{action 'checkIn' pet}}>Check In</a>
+    </li>
   {{/each}}
 </ul>
